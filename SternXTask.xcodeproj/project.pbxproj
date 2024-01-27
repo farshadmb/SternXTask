@@ -7,17 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1F8AFDFC09CA5E65832B97 /* Pods_SternXTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33B89CECB75125687C01C57 /* Pods_SternXTask.framework */; };
+		DBE8FD370CD5F6AEDD7CADD8 /* Pods_SternXTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D231CB0E4182EBEC94E100F /* Pods_SternXTaskTests.framework */; };
 		F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32502B656A7F002FC296 /* AppDelegate.swift */; };
 		F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32522B656A81002FC296 /* Assets.xcassets */; };
 		F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */; };
+		F8FD32642B656AB3002FC296 /* SternXTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32632B656AB3002FC296 /* SternXTaskTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F8FD32652B656AB3002FC296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8FD32452B656A7F002FC296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8FD324C2B656A7F002FC296;
+			remoteInfo = SternXTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		188D931A41D73E63992BF1F4 /* Pods-SternXTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTask.release.xcconfig"; path = "Target Support Files/Pods-SternXTask/Pods-SternXTask.release.xcconfig"; sourceTree = "<group>"; };
+		6D231CB0E4182EBEC94E100F /* Pods_SternXTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SternXTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF0662749524340B9ECBF3 /* Pods-SternXTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A33B89CECB75125687C01C57 /* Pods_SternXTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SternXTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBE59819CEB6930B62FCE5D /* Pods-SternXTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTask.debug.xcconfig"; path = "Target Support Files/Pods-SternXTask/Pods-SternXTask.debug.xcconfig"; sourceTree = "<group>"; };
 		F8FD324D2B656A7F002FC296 /* SternXTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SternXTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD32502B656A7F002FC296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FD32522B656A81002FC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8FD32552B656A81002FC296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8FD32572B656A81002FC296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FD32612B656AB3002FC296 /* SternXTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SternXTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FD32632B656AB3002FC296 /* SternXTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SternXTaskTests.swift; sourceTree = "<group>"; };
+		FB537B107B4E687FA56CA2DF /* Pods-SternXTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +46,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1F8AFDFC09CA5E65832B97 /* Pods_SternXTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FD325E2B656AB3002FC296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE8FD370CD5F6AEDD7CADD8 /* Pods_SternXTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1295D3DDD302743E12DC73E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A33B89CECB75125687C01C57 /* Pods_SternXTask.framework */,
+				6D231CB0E4182EBEC94E100F /* Pods_SternXTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D33C9832059DA18A77FED238 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEBE59819CEB6930B62FCE5D /* Pods-SternXTask.debug.xcconfig */,
+				188D931A41D73E63992BF1F4 /* Pods-SternXTask.release.xcconfig */,
+				7BDF0662749524340B9ECBF3 /* Pods-SternXTaskTests.debug.xcconfig */,
+				FB537B107B4E687FA56CA2DF /* Pods-SternXTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F8FD32442B656A7F002FC296 = {
 			isa = PBXGroup;
 			children = (
 				F8FD324F2B656A7F002FC296 /* SternXTask */,
+				F8FD32622B656AB3002FC296 /* SternXTaskTests */,
 				F8FD324E2B656A7F002FC296 /* Products */,
+				D33C9832059DA18A77FED238 /* Pods */,
+				1295D3DDD302743E12DC73E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F8FD324D2B656A7F002FC296 /* SternXTask.app */,
+				F8FD32612B656AB3002FC296 /* SternXTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +113,14 @@
 			path = SternXTask;
 			sourceTree = "<group>";
 		};
+		F8FD32622B656AB3002FC296 /* SternXTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD32632B656AB3002FC296 /* SternXTaskTests.swift */,
+			);
+			path = SternXTaskTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8FD325A2B656A81002FC296 /* Build configuration list for PBXNativeTarget "SternXTask" */;
 			buildPhases = (
+				666F3CAF839AB74D7D5B2E57 /* [CP] Check Pods Manifest.lock */,
 				F8FD32492B656A7F002FC296 /* Sources */,
 				F8FD324A2B656A7F002FC296 /* Frameworks */,
 				F8FD324B2B656A7F002FC296 /* Resources */,
+				A96EC2E4F76B3DF53B208468 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,6 +142,26 @@
 			productName = SternXTask;
 			productReference = F8FD324D2B656A7F002FC296 /* SternXTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F8FD32602B656AB3002FC296 /* SternXTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8FD32672B656AB3002FC296 /* Build configuration list for PBXNativeTarget "SternXTaskTests" */;
+			buildPhases = (
+				2A5A2BC2FBAE94999F01B151 /* [CP] Check Pods Manifest.lock */,
+				F8FD325D2B656AB3002FC296 /* Sources */,
+				F8FD325E2B656AB3002FC296 /* Frameworks */,
+				F8FD325F2B656AB3002FC296 /* Resources */,
+				745B2D7F2AF4418BD5625908 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8FD32662B656AB3002FC296 /* PBXTargetDependency */,
+			);
+			name = SternXTaskTests;
+			productName = SternXTaskTests;
+			productReference = F8FD32612B656AB3002FC296 /* SternXTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,6 +175,10 @@
 				TargetAttributes = {
 					F8FD324C2B656A7F002FC296 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					F8FD32602B656AB3002FC296 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F8FD324C2B656A7F002FC296;
 					};
 				};
 			};
@@ -107,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				F8FD324C2B656A7F002FC296 /* SternXTask */,
+				F8FD32602B656AB3002FC296 /* SternXTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -121,7 +211,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8FD325F2B656AB3002FC296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A5A2BC2FBAE94999F01B151 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SternXTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666F3CAF839AB74D7D5B2E57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SternXTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		745B2D7F2AF4418BD5625908 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A96EC2E4F76B3DF53B208468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SternXTask/Pods-SternXTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8FD32492B656A7F002FC296 /* Sources */ = {
@@ -132,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8FD325D2B656AB3002FC296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FD32642B656AB3002FC296 /* SternXTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8FD32662B656AB3002FC296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8FD324C2B656A7F002FC296 /* SternXTask */;
+			targetProxy = F8FD32652B656AB3002FC296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */ = {
@@ -267,6 +457,7 @@
 		};
 		F8FD325B2B656A81002FC296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBE59819CEB6930B62FCE5D /* Pods-SternXTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +477,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,6 +488,7 @@
 		};
 		F8FD325C2B656A81002FC296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188D931A41D73E63992BF1F4 /* Pods-SternXTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,9 +508,56 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8FD32682B656AB3002FC296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDF0662749524340B9ECBF3 /* Pods-SternXTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SternXTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SternXTask";
+			};
+			name = Debug;
+		};
+		F8FD32692B656AB3002FC296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB537B107B4E687FA56CA2DF /* Pods-SternXTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SternXTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SternXTask";
 			};
 			name = Release;
 		};
@@ -336,6 +578,15 @@
 			buildConfigurations = (
 				F8FD325B2B656A81002FC296 /* Debug */,
 				F8FD325C2B656A81002FC296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8FD32672B656AB3002FC296 /* Build configuration list for PBXNativeTarget "SternXTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FD32682B656AB3002FC296 /* Debug */,
+				F8FD32692B656AB3002FC296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
