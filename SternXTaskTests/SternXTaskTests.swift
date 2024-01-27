@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import SternXTask
 
 final class SternXTaskTests: XCTestCase {
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2C89A3869C895B7D2915C884 /* Pods_SternXTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B887336C2A758001821F5 /* Pods_SternXTaskTests.framework */; };
 		CBFEEA3E66041865F91C6AB8 /* Pods_SternXTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FF7EEC0231BB09992C8A30 /* Pods_SternXTask.framework */; };
+		F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CDA2B658F15006E9B54 /* APIClient.swift */; };
+		F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CDC2B659249006E9B54 /* APIRequest.swift */; };
+		F84C83FB2B658784003FE569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C83F92B658784003FE569 /* Main.storyboard */; };
 		F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32502B656A7F002FC296 /* AppDelegate.swift */; };
 		F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32522B656A81002FC296 /* Assets.xcassets */; };
 		F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */; };
@@ -32,6 +35,9 @@
 		A7455843E009D598308136B0 /* Pods-SternXTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		D439AB13D2E527B837492035 /* Pods-SternXTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTask.release.xcconfig"; path = "Target Support Files/Pods-SternXTask/Pods-SternXTask.release.xcconfig"; sourceTree = "<group>"; };
 		EF84197718CC12506DDA1A34 /* Pods-SternXTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8232CDA2B658F15006E9B54 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F8232CDC2B659249006E9B54 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F84C83FA2B658784003FE569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8FD324D2B656A7F002FC296 /* SternXTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SternXTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD32502B656A7F002FC296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FD32522B656A81002FC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +87,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F8232CD92B658F00006E9B54 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				F8232CDA2B658F15006E9B54 /* APIClient.swift */,
+				F8232CDC2B659249006E9B54 /* APIRequest.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		F84C83F62B6585D8003FE569 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F84C83F72B6585E7003FE569 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F8232CD92B658F00006E9B54 /* Networks */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F84C83F82B6585ED003FE569 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		F8FD32442B656A7F002FC296 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +141,12 @@
 		F8FD324F2B656A7F002FC296 /* SternXTask */ = {
 			isa = PBXGroup;
 			children = (
+				F84C83F82B6585ED003FE569 /* Domain */,
+				F84C83F72B6585E7003FE569 /* DataLayer */,
+				F84C83F62B6585D8003FE569 /* Presentation */,
 				F8FD32502B656A7F002FC296 /* AppDelegate.swift */,
 				F8FD32522B656A81002FC296 /* Assets.xcassets */,
+				F84C83F92B658784003FE569 /* Main.storyboard */,
 				F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */,
 				F8FD32572B656A81002FC296 /* Info.plist */,
 			);
@@ -132,6 +173,7 @@
 				F8FD324A2B656A7F002FC296 /* Frameworks */,
 				F8FD324B2B656A7F002FC296 /* Resources */,
 				92105659A20F965A1F76FC84 /* [CP] Embed Pods Frameworks */,
+				F8232CD82B658E5D006E9B54 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84C83FB2B658784003FE569 /* Main.storyboard in Resources */,
 				F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */,
 				F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -295,6 +338,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SternXTask/Pods-SternXTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8232CD82B658E5D006E9B54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    echo \"info: swiftlint installed on terminal\"\n    swiftlint --fix\n    swiftlint \nelif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    echo \"info: Located in Pods/SwiftLint at ${PODS_ROOT}\"\n    \"${PODS_ROOT}/SwiftLint/swiftlint\" --fix\n    \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    exit 1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -303,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */,
+				F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */,
+				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +388,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F84C83F92B658784003FE569 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F84C83FA2B658784003FE569 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
