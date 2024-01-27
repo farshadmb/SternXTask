@@ -15,7 +15,8 @@ protocol APIClient: AnyObject {
     /// - Parameters:
     ///   - request: a `APIRequest` object to be run in opration
     ///   - completion: a completion closure that called when the operation is done whether is successed or failed
-    func execute<T: Decodable>(request: APIRequest, completion: @escaping (Result<T, Error>) -> Void)
+    @discardableResult
+    func execute<T: Decodable>(request: APIRequest, completion: @escaping (Result<T, Error>) -> Void) -> APIRequestTask?
     
 }
 
@@ -29,12 +30,10 @@ extension APIClient {
             .create {[weak self] observer in
                 guard let strongSelf = self else {
                     observer.onCompleted()
-                    return Disposables.create {
-                        request.cancelRequest()
-                    }
+                    return Disposables.create()
                 }
                 
-                strongSelf.execute(request: request) { (result: Result<T, Error>) in
+                let task = strongSelf.execute(request: request) { (result: Result<T, Error>) in
                     switch result {
                     case .success(let response):
                         observer.onNext(response)
@@ -45,7 +44,7 @@ extension APIClient {
                 }
                 
                 return Disposables.create {
-                    request.cancelRequest()
+                    task?.cancelTask()
                 }
                 
             }

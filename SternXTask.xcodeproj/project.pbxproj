@@ -11,6 +11,10 @@
 		CBFEEA3E66041865F91C6AB8 /* Pods_SternXTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FF7EEC0231BB09992C8A30 /* Pods_SternXTask.framework */; };
 		F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CDA2B658F15006E9B54 /* APIClient.swift */; };
 		F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CDC2B659249006E9B54 /* APIRequest.swift */; };
+		F8232CDF2B65965A006E9B54 /* DefaultAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CDE2B65965A006E9B54 /* DefaultAPIClient.swift */; };
+		F8232CE22B6598B8006E9B54 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CE12B6598B8006E9B54 /* Logger.swift */; };
+		F8232CE42B659F8D006E9B54 /* APIRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CE32B659F8D006E9B54 /* APIRequestTask.swift */; };
+		F8232CE62B65A28C006E9B54 /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8232CE52B65A28C006E9B54 /* APIParametersRequest.swift */; };
 		F84C83FB2B658784003FE569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C83F92B658784003FE569 /* Main.storyboard */; };
 		F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32502B656A7F002FC296 /* AppDelegate.swift */; };
 		F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32522B656A81002FC296 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 		EF84197718CC12506DDA1A34 /* Pods-SternXTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SternXTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SternXTaskTests/Pods-SternXTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8232CDA2B658F15006E9B54 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		F8232CDC2B659249006E9B54 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F8232CDE2B65965A006E9B54 /* DefaultAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIClient.swift; sourceTree = "<group>"; };
+		F8232CE12B6598B8006E9B54 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F8232CE32B659F8D006E9B54 /* APIRequestTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTask.swift; sourceTree = "<group>"; };
+		F8232CE52B65A28C006E9B54 /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
 		F84C83FA2B658784003FE569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8FD324D2B656A7F002FC296 /* SternXTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SternXTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD32502B656A7F002FC296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,10 +98,29 @@
 		F8232CD92B658F00006E9B54 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
+				F8232CE72B65A381006E9B54 /* Imp */,
 				F8232CDA2B658F15006E9B54 /* APIClient.swift */,
 				F8232CDC2B659249006E9B54 /* APIRequest.swift */,
+				F8232CE32B659F8D006E9B54 /* APIRequestTask.swift */,
 			);
 			path = Networks;
+			sourceTree = "<group>";
+		};
+		F8232CE02B6598A9006E9B54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8232CE12B6598B8006E9B54 /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8232CE72B65A381006E9B54 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				F8232CDE2B65965A006E9B54 /* DefaultAPIClient.swift */,
+				F8232CE52B65A28C006E9B54 /* APIParametersRequest.swift */,
+			);
+			path = Imp;
 			sourceTree = "<group>";
 		};
 		F84C83F62B6585D8003FE569 /* Presentation */ = {
@@ -141,6 +168,7 @@
 		F8FD324F2B656A7F002FC296 /* SternXTask */ = {
 			isa = PBXGroup;
 			children = (
+				F8232CE02B6598A9006E9B54 /* Helpers */,
 				F84C83F82B6585ED003FE569 /* Domain */,
 				F84C83F72B6585E7003FE569 /* DataLayer */,
 				F84C83F62B6585D8003FE569 /* Presentation */,
@@ -363,9 +391,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8232CE22B6598B8006E9B54 /* Logger.swift in Sources */,
 				F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */,
+				F8232CE62B65A28C006E9B54 /* APIParametersRequest.swift in Sources */,
 				F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */,
 				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
+				F8232CDF2B65965A006E9B54 /* DefaultAPIClient.swift in Sources */,
+				F8232CE42B659F8D006E9B54 /* APIRequestTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

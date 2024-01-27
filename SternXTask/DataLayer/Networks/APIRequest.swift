@@ -22,9 +22,6 @@ protocol APIRequest {
     /// - Returns: A `URLRequest` object.
     /// - Throws:  Any error thrown while constructing the `URLRequest`.
     func request() throws -> URLRequest
-    
-    /// Cancel the request
-    func cancelRequest()
 }
 
 /// The default implementation for `APIRequest`
@@ -32,5 +29,4 @@ extension APIRequest {
     
     var validStatusCodes: Set<Int> { Set(200..<300) }
     var validContentTypes: Set<String> { ["application/json"] }
-    
 }
