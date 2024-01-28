@@ -19,6 +19,13 @@
 		F8DE62512B66F41100FF780D /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62502B66F41100FF780D /* PostDto.swift */; };
 		F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */; };
 		F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62582B66F51F00FF780D /* PostRepository.swift */; };
+		F8DE625B2B66FA2A00FF780D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE625A2B66FA2A00FF780D /* User.swift */; };
+		F8DE625D2B66FA4100FF780D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE625C2B66FA4100FF780D /* Post.swift */; };
+		F8DE625F2B66FC5E00FF780D /* ReportUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE625E2B66FC5E00FF780D /* ReportUsecase.swift */; };
+		F8DE62612B66FFEA00FF780D /* UserPostReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62602B66FFEA00FF780D /* UserPostReport.swift */; };
+		F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62622B67017600FF780D /* DefaultReportUsecase.swift */; };
+		F8DE62652B67056700FF780D /* DataProcessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62642B67056700FF780D /* DataProcessingStrategy.swift */; };
+		F8DE62672B67063E00FF780D /* ReportDataProcessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62662B67063E00FF780D /* ReportDataProcessingStrategy.swift */; };
 		F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32502B656A7F002FC296 /* AppDelegate.swift */; };
 		F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32522B656A81002FC296 /* Assets.xcassets */; };
 		F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */; };
@@ -52,6 +59,13 @@
 		F8DE62502B66F41100FF780D /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
 		F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRemoteRepository.swift; sourceTree = "<group>"; };
 		F8DE62582B66F51F00FF780D /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		F8DE625A2B66FA2A00FF780D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8DE625C2B66FA4100FF780D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F8DE625E2B66FC5E00FF780D /* ReportUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUsecase.swift; sourceTree = "<group>"; };
+		F8DE62602B66FFEA00FF780D /* UserPostReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostReport.swift; sourceTree = "<group>"; };
+		F8DE62622B67017600FF780D /* DefaultReportUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReportUsecase.swift; sourceTree = "<group>"; };
+		F8DE62642B67056700FF780D /* DataProcessingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcessingStrategy.swift; sourceTree = "<group>"; };
+		F8DE62662B67063E00FF780D /* ReportDataProcessingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProcessingStrategy.swift; sourceTree = "<group>"; };
 		F8FD324D2B656A7F002FC296 /* SternXTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SternXTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD32502B656A7F002FC296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FD32522B656A81002FC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +173,9 @@
 		F8DE624D2B66F33400FF780D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F8DE625A2B66FA2A00FF780D /* User.swift */,
+				F8DE625C2B66FA4100FF780D /* Post.swift */,
+				F8DE62602B66FFEA00FF780D /* UserPostReport.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -166,6 +183,10 @@
 		F8DE624E2B66F34600FF780D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				F8DE625E2B66FC5E00FF780D /* ReportUsecase.swift */,
+				F8DE62622B67017600FF780D /* DefaultReportUsecase.swift */,
+				F8DE62642B67056700FF780D /* DataProcessingStrategy.swift */,
+				F8DE62662B67063E00FF780D /* ReportDataProcessingStrategy.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -441,15 +462,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8232CE22B6598B8006E9B54 /* Logger.swift in Sources */,
+				F8DE62652B67056700FF780D /* DataProcessingStrategy.swift in Sources */,
 				F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */,
 				F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */,
+				F8DE625D2B66FA4100FF780D /* Post.swift in Sources */,
 				F8232CE62B65A28C006E9B54 /* APIParametersRequest.swift in Sources */,
+				F8DE62672B67063E00FF780D /* ReportDataProcessingStrategy.swift in Sources */,
 				F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */,
+				F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */,
 				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
 				F8DE62512B66F41100FF780D /* PostDto.swift in Sources */,
+				F8DE625F2B66FC5E00FF780D /* ReportUsecase.swift in Sources */,
 				F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */,
 				F8232CDF2B65965A006E9B54 /* DefaultAPIClient.swift in Sources */,
 				F8232CE42B659F8D006E9B54 /* APIRequestTask.swift in Sources */,
+				F8DE62612B66FFEA00FF780D /* UserPostReport.swift in Sources */,
+				F8DE625B2B66FA2A00FF780D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

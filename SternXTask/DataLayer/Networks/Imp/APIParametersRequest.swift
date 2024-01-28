@@ -65,7 +65,7 @@ struct APIParametersRequest: APIRequest {
         var requestHeaders = headers ?? HTTPHeaders([acceptHeader])
         requestHeaders.add(acceptHeader)
 
-        var request = try URLRequest(url: url, method: method, headers: requestHeaders)
+        let request = try URLRequest(url: url, method: method, headers: requestHeaders)
         return try encoding.encode(request, with: parameters)
     }
 }
