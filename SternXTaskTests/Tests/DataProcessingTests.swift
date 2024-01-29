@@ -33,6 +33,11 @@ final class DataProcessingTests: XCTestCase {
                 return
             }
             XCTAssertEqual(report.topMostUsers.count, 5, "The report does not contain top 5 member with highest post")
+            let user = report.topMostUsers[0]
+            let actualAverage = user.posts.reduce(0, { sum, post in post.body.count + sum }) / user.postCount
+            XCTAssertEqual(user.averageCharacters, actualAverage)
+            let actualPostCount = data.filter { $0.userId == user.id }.count
+            XCTAssertEqual(user.postCount, actualPostCount)
             exp.fulfill()
         }
             

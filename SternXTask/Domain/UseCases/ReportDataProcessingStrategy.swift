@@ -32,7 +32,8 @@ final class ReportDataProcessingStrategy: DataProcessingStrategy {
                 }
                 
                 let post = Post(id: postDto.id, user: user, title: postDto.title, body: postDto.body)
-                user.averageCharacters = (user.averageCharacters * user.postCount + post.bodyCount) / (user.postCount + 1)
+                user.averageCharacters = (user.totalPostLength + post.bodyCount) / (user.postCount + 1)
+                user.totalPostLength += post.bodyCount
                 user.posts.append(post)
             }
             

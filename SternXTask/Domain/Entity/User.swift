@@ -14,11 +14,13 @@ class User {
     var posts: [Post] = []
     var averageCharacters: Int = 0
     var postCount: Int { posts.count }
+    var totalPostLength: Int = 0
     
-    init(id: Int, posts: [Post] = [], avarageCharecter: Int = 0) {
+    init(id: Int, posts: [Post] = [], averageCharacters: Int = 0, totalPostLength: Int = 0) {
         self.id = id
         self.posts = posts
-        self.averageCharacters = avarageCharecter
+        self.averageCharacters = averageCharacters
+        self.totalPostLength = totalPostLength
     }
     
 }
