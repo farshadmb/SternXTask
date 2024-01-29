@@ -25,6 +25,25 @@
 		F8A6466B2B67D922009427DC /* Result+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466A2B67D922009427DC /* Result+Helpers.swift */; };
 		F8A6466D2B67E04C009427DC /* PostRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466C2B67E04C009427DC /* PostRemoteRepositoryTests.swift */; };
 		F8A6466F2B67E41E009427DC /* ReportUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466E2B67E41E009427DC /* ReportUseCaseTests.swift */; };
+		F8A646752B67F3E8009427DC /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646742B67F3E8009427DC /* ReportsViewController.swift */; };
+		F8A646772B67F407009427DC /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646762B67F407009427DC /* ReportViewModel.swift */; };
+		F8A646792B67F41B009427DC /* ReportUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646782B67F41B009427DC /* ReportUserViewModel.swift */; };
+		F8A6467B2B67F842009427DC /* Rx+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6467A2B67F842009427DC /* Rx+Helpers.swift */; };
+		F8A6467D2B68053A009427DC /* ContentStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6467C2B68053A009427DC /* ContentStateView.swift */; };
+		F8A6467F2B680978009427DC /* Font+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6467E2B680978009427DC /* Font+Styles.swift */; };
+		F8A646812B6814A2009427DC /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646802B6814A2009427DC /* UIView+Nib.swift */; };
+		F8A646832B6814FA009427DC /* CollectionView+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646822B6814FA009427DC /* CollectionView+helpers.swift */; };
+		F8A646862B681795009427DC /* TopUsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646842B681795009427DC /* TopUsersCollectionViewCell.swift */; };
+		F8A646872B681795009427DC /* TopUsersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A646852B681795009427DC /* TopUsersCollectionViewCell.xib */; };
+		F8A6468A2B6817AF009427DC /* ReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646882B6817AF009427DC /* ReportCollectionViewCell.swift */; };
+		F8A6468B2B6817AF009427DC /* ReportCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A646892B6817AF009427DC /* ReportCollectionViewCell.xib */; };
+		F8A6468E2B681828009427DC /* ReportHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6468C2B681828009427DC /* ReportHeaderCollectionView.swift */; };
+		F8A6468F2B681828009427DC /* ReportHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A6468D2B681828009427DC /* ReportHeaderCollectionView.xib */; };
+		F8A646912B68191F009427DC /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646902B68191F009427DC /* BindableType.swift */; };
+		F8A646932B681F7E009427DC /* ReportSectionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646922B681F7E009427DC /* ReportSectionItemViewModel.swift */; };
+		F8A646952B681FEA009427DC /* ReportTopUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646942B681FEA009427DC /* ReportTopUsersViewModel.swift */; };
+		F8A646972B6820B7009427DC /* ImplementationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646962B6820B7009427DC /* ImplementationError.swift */; };
+		F8A646992B68296E009427DC /* UserChartEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646982B68296E009427DC /* UserChartEntryViewModel.swift */; };
 		F8DE62512B66F41100FF780D /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62502B66F41100FF780D /* PostDto.swift */; };
 		F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */; };
 		F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62582B66F51F00FF780D /* PostRepository.swift */; };
@@ -77,6 +96,25 @@
 		F8A6466A2B67D922009427DC /* Result+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Helpers.swift"; sourceTree = "<group>"; };
 		F8A6466C2B67E04C009427DC /* PostRemoteRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteRepositoryTests.swift; sourceTree = "<group>"; };
 		F8A6466E2B67E41E009427DC /* ReportUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUseCaseTests.swift; sourceTree = "<group>"; };
+		F8A646742B67F3E8009427DC /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		F8A646762B67F407009427DC /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		F8A646782B67F41B009427DC /* ReportUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUserViewModel.swift; sourceTree = "<group>"; };
+		F8A6467A2B67F842009427DC /* Rx+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Helpers.swift"; sourceTree = "<group>"; };
+		F8A6467C2B68053A009427DC /* ContentStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateView.swift; sourceTree = "<group>"; };
+		F8A6467E2B680978009427DC /* Font+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Styles.swift"; sourceTree = "<group>"; };
+		F8A646802B6814A2009427DC /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		F8A646822B6814FA009427DC /* CollectionView+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+helpers.swift"; sourceTree = "<group>"; };
+		F8A646842B681795009427DC /* TopUsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUsersCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8A646852B681795009427DC /* TopUsersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopUsersCollectionViewCell.xib; sourceTree = "<group>"; };
+		F8A646882B6817AF009427DC /* ReportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8A646892B6817AF009427DC /* ReportCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportCollectionViewCell.xib; sourceTree = "<group>"; };
+		F8A6468C2B681828009427DC /* ReportHeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHeaderCollectionView.swift; sourceTree = "<group>"; };
+		F8A6468D2B681828009427DC /* ReportHeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportHeaderCollectionView.xib; sourceTree = "<group>"; };
+		F8A646902B68191F009427DC /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		F8A646922B681F7E009427DC /* ReportSectionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSectionItemViewModel.swift; sourceTree = "<group>"; };
+		F8A646942B681FEA009427DC /* ReportTopUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTopUsersViewModel.swift; sourceTree = "<group>"; };
+		F8A646962B6820B7009427DC /* ImplementationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementationError.swift; sourceTree = "<group>"; };
+		F8A646982B68296E009427DC /* UserChartEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChartEntryViewModel.swift; sourceTree = "<group>"; };
 		F8DE62502B66F41100FF780D /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
 		F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRemoteRepository.swift; sourceTree = "<group>"; };
 		F8DE62582B66F51F00FF780D /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
@@ -154,6 +192,12 @@
 			children = (
 				F8232CE12B6598B8006E9B54 /* Logger.swift */,
 				F8A6466A2B67D922009427DC /* Result+Helpers.swift */,
+				F8A6467A2B67F842009427DC /* Rx+Helpers.swift */,
+				F8A6467E2B680978009427DC /* Font+Styles.swift */,
+				F8A646802B6814A2009427DC /* UIView+Nib.swift */,
+				F8A646822B6814FA009427DC /* CollectionView+helpers.swift */,
+				F8A646902B68191F009427DC /* BindableType.swift */,
+				F8A646962B6820B7009427DC /* ImplementationError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -170,6 +214,7 @@
 		F84C83F62B6585D8003FE569 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F8A646702B67F2BE009427DC /* User Reports */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -204,6 +249,50 @@
 				F8A646662B67D5D7009427DC /* DataFetcherHelper.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F8A646702B67F2BE009427DC /* User Reports */ = {
+			isa = PBXGroup;
+			children = (
+				F8A646732B67F349009427DC /* Views */,
+				F8A646722B67F33E009427DC /* ViewControllers */,
+				F8A646712B67F333009427DC /* ViewModels */,
+			);
+			path = "User Reports";
+			sourceTree = "<group>";
+		};
+		F8A646712B67F333009427DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8A646762B67F407009427DC /* ReportViewModel.swift */,
+				F8A646922B681F7E009427DC /* ReportSectionItemViewModel.swift */,
+				F8A646782B67F41B009427DC /* ReportUserViewModel.swift */,
+				F8A646942B681FEA009427DC /* ReportTopUsersViewModel.swift */,
+				F8A646982B68296E009427DC /* UserChartEntryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8A646722B67F33E009427DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A646742B67F3E8009427DC /* ReportsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8A646732B67F349009427DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8A6467C2B68053A009427DC /* ContentStateView.swift */,
+				F8A646842B681795009427DC /* TopUsersCollectionViewCell.swift */,
+				F8A646852B681795009427DC /* TopUsersCollectionViewCell.xib */,
+				F8A646882B6817AF009427DC /* ReportCollectionViewCell.swift */,
+				F8A646892B6817AF009427DC /* ReportCollectionViewCell.xib */,
+				F8A6468C2B681828009427DC /* ReportHeaderCollectionView.swift */,
+				F8A6468D2B681828009427DC /* ReportHeaderCollectionView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F8DE624D2B66F33400FF780D /* Entity */ = {
@@ -398,8 +487,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F84C83FB2B658784003FE569 /* Main.storyboard in Resources */,
+				F8A6468F2B681828009427DC /* ReportHeaderCollectionView.xib in Resources */,
 				F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */,
+				F8A6468B2B6817AF009427DC /* ReportCollectionViewCell.xib in Resources */,
 				F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */,
+				F8A646872B681795009427DC /* TopUsersCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,23 +607,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8232CE22B6598B8006E9B54 /* Logger.swift in Sources */,
+				F8A646792B67F41B009427DC /* ReportUserViewModel.swift in Sources */,
 				F8DE62652B67056700FF780D /* DataProcessingStrategy.swift in Sources */,
 				F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */,
+				F8A646912B68191F009427DC /* BindableType.swift in Sources */,
+				F8A646952B681FEA009427DC /* ReportTopUsersViewModel.swift in Sources */,
 				F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */,
+				F8A646772B67F407009427DC /* ReportViewModel.swift in Sources */,
 				F8DE625D2B66FA4100FF780D /* Post.swift in Sources */,
+				F8A646752B67F3E8009427DC /* ReportsViewController.swift in Sources */,
+				F8A646862B681795009427DC /* TopUsersCollectionViewCell.swift in Sources */,
 				F8232CE62B65A28C006E9B54 /* APIParametersRequest.swift in Sources */,
 				F8DE62672B67063E00FF780D /* ReportDataProcessingStrategy.swift in Sources */,
 				F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */,
 				F8A6466B2B67D922009427DC /* Result+Helpers.swift in Sources */,
+				F8A646992B68296E009427DC /* UserChartEntryViewModel.swift in Sources */,
+				F8A6467D2B68053A009427DC /* ContentStateView.swift in Sources */,
 				F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */,
 				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
 				F8DE62512B66F41100FF780D /* PostDto.swift in Sources */,
+				F8A646832B6814FA009427DC /* CollectionView+helpers.swift in Sources */,
 				F8DE625F2B66FC5E00FF780D /* ReportUsecase.swift in Sources */,
+				F8A646932B681F7E009427DC /* ReportSectionItemViewModel.swift in Sources */,
 				F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */,
+				F8A6468A2B6817AF009427DC /* ReportCollectionViewCell.swift in Sources */,
+				F8A6467F2B680978009427DC /* Font+Styles.swift in Sources */,
 				F8232CDF2B65965A006E9B54 /* DefaultAPIClient.swift in Sources */,
 				F8232CE42B659F8D006E9B54 /* APIRequestTask.swift in Sources */,
+				F8A646972B6820B7009427DC /* ImplementationError.swift in Sources */,
+				F8A6467B2B67F842009427DC /* Rx+Helpers.swift in Sources */,
 				F8DE62612B66FFEA00FF780D /* UserPostReport.swift in Sources */,
+				F8A646812B6814A2009427DC /* UIView+Nib.swift in Sources */,
 				F8DE625B2B66FA2A00FF780D /* User.swift in Sources */,
+				F8A6468E2B681828009427DC /* ReportHeaderCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

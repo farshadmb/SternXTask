@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ReportHeaderCollectionView" customModule="SternXTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-K4-IRD">
+                    <rect key="frame" x="0.0" y="0.0" width="388" height="119"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGb-b7-rGv">
+                    <rect key="frame" x="16" y="59" width="356" height="26"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Aq-K4-IRD" secondAttribute="bottom" id="HBB-Cx-pP5"/>
+                <constraint firstAttribute="bottomMargin" secondItem="MGb-b7-rGv" secondAttribute="bottom" id="I84-42-hYc"/>
+                <constraint firstItem="2Aq-K4-IRD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Q2P-Z9-w3b"/>
+                <constraint firstItem="MGb-b7-rGv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leadingMargin" id="Rrz-v6-4AB"/>
+                <constraint firstAttribute="trailing" secondItem="2Aq-K4-IRD" secondAttribute="trailing" id="eGZ-4F-SIN"/>
+                <constraint firstAttribute="trailingMargin" secondItem="MGb-b7-rGv" secondAttribute="trailing" id="iii-gc-xtN"/>
+                <constraint firstItem="2Aq-K4-IRD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="xbF-aR-8HS"/>
+                <constraint firstItem="MGb-b7-rGv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="topMargin" id="xsT-4I-WRz"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="MGb-b7-rGv" id="uLD-1j-yiV"/>
+            </connections>
+            <point key="canvasLocation" x="77.862595419847324" y="13.028169014084508"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
