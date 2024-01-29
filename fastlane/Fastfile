@@ -51,6 +51,8 @@ platform :ios do
           device: device, # Devices for testing     
           configuration: "Debug",
           code_coverage: true,
+          parallel_testing: false, 
+          max_concurrent_simulators: 1,
           open_report: open_report)
  end
 
