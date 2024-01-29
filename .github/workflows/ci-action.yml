@@ -1,0 +1,45 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: CI-Testing
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  Swiftlint:
+    name: Swiftlint Checker
+    runs-on: linux
+    steps:
+        - name: Checkout Branch
+          uses: actions/checkout@v4
+        - name: Swiftlint Checker
+          uses: norio-nomura/action-swiftlint@3.2.1
+          with:
+            args: --force-exclude --config .swiftlint.yml
+  Test:
+    name: Run Unit Test
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Dependency installation
+      run: bundle install
+    - name: Build and test
+      run: bundle exec fastlane run_ci_tests clean:true --verbose
+    - name: Archive Failed Tests artifacts
+      if: failure()
+      uses: actions/upload-artifact@v2
+      with:
+        name: FailureDiff
+        path: fastlane/test_output
+    - name: Archive Success Tests artifacts
+      if: success()
+      uses: actions/upload-artifact@v2
+      with:
+        name: SuccessDiff
+        path: fastlane/test_output
