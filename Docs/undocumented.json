@@ -1,6 +1,34 @@
 {
   "warnings": [
     {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDIContainers.swift",
+      "line": 12,
+      "symbol": "AppDIContainers",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDIContainers.swift",
+      "line": 14,
+      "symbol": "AppDIContainers.apiClient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDIContainers.swift",
+      "line": 19,
+      "symbol": "AppDIContainers.postRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDIContainers.swift",
+      "line": 24,
+      "symbol": "AppDIContainers.makeReportViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
       "line": 11,
       "symbol": "AppDelegate",
@@ -16,6 +44,13 @@
     },
     {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.container",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
       "line": 16,
       "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -23,29 +58,981 @@
     },
     {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
-      "line": 27,
+      "line": 26,
       "symbol": "AppDelegate.applicationWillResignActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
-      "line": 32,
+      "line": 31,
       "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
-      "line": 36,
+      "line": 35,
       "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/AppDelegate.swift",
-      "line": 40,
+      "line": 39,
       "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/DTOs/PostDto.swift",
+      "line": 11,
+      "symbol": "PostDto",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/DTOs/PostDto.swift",
+      "line": 13,
+      "symbol": "PostDto.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/DTOs/PostDto.swift",
+      "line": 14,
+      "symbol": "PostDto.userId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/DTOs/PostDto.swift",
+      "line": 15,
+      "symbol": "PostDto.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/DTOs/PostDto.swift",
+      "line": 16,
+      "symbol": "PostDto.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/APIClient.swift",
+      "line": 12,
+      "symbol": "APIClient",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/APIClient.swift",
+      "line": 23,
+      "symbol": "APIClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/APIRequestTask.swift",
+      "line": 11,
+      "symbol": "APIRequestTask",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/APIRequestTask.swift",
+      "line": 13,
+      "symbol": "APIRequestTask.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/APIRequestTask.swift",
+      "line": 15,
+      "symbol": "APIRequestTask.cancelTask()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Networks/Imp/APIParametersRequest.swift",
+      "line": 12,
+      "symbol": "APIParametersRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Repositories/PostsRemoteRepository.swift",
+      "line": 13,
+      "symbol": "PostRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Repositories/PostsRemoteRepository.swift",
+      "line": 15,
+      "symbol": "PostRemoteRepository.client",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Repositories/PostsRemoteRepository.swift",
+      "line": 17,
+      "symbol": "PostRemoteRepository.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/DataLayer/Repositories/PostsRemoteRepository.swift",
+      "line": 21,
+      "symbol": "PostRemoteRepository.getPosts()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 11,
+      "symbol": "Post",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 13,
+      "symbol": "Post.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 14,
+      "symbol": "Post.user",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 15,
+      "symbol": "Post.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 16,
+      "symbol": "Post.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/Post.swift",
+      "line": 18,
+      "symbol": "Post.bodyCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 11,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 13,
+      "symbol": "User.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 14,
+      "symbol": "User.posts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 15,
+      "symbol": "User.averageCharacters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 16,
+      "symbol": "User.postCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 17,
+      "symbol": "User.totalPostLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/User.swift",
+      "line": 19,
+      "symbol": "User.init(id:posts:averageCharacters:totalPostLength:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/UserPostReport.swift",
+      "line": 11,
+      "symbol": "UserPostReport",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/UserPostReport.swift",
+      "line": 13,
+      "symbol": "UserPostReport.topMostUsers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Entity/UserPostReport.swift",
+      "line": 14,
+      "symbol": "UserPostReport.users",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Interfaces/PostRepository.swift",
+      "line": 12,
+      "symbol": "PostRepository",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/Interfaces/PostRepository.swift",
+      "line": 14,
+      "symbol": "PostRepository.getPosts()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/DefaultReportUsecase.swift",
+      "line": 13,
+      "symbol": "DefaultReportUsecase",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/DefaultReportUsecase.swift",
+      "line": 15,
+      "symbol": "DefaultReportUsecase.postRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/DefaultReportUsecase.swift",
+      "line": 16,
+      "symbol": "DefaultReportUsecase.dataProcessorStrategy",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/DefaultReportUsecase.swift",
+      "line": 18,
+      "symbol": "DefaultReportUsecase.init(postRepository:dataProcessorStrategy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/ReportDataProcessingStrategy.swift",
+      "line": 11,
+      "symbol": "ReportDataProcessingStrategy",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/ReportDataProcessingStrategy.swift",
+      "line": 13,
+      "symbol": "ReportDataProcessingStrategy.operationQueue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Domain/UseCases/ReportDataProcessingStrategy.swift",
+      "line": 15,
+      "symbol": "ReportDataProcessingStrategy.init(operationQueue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 12,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 14,
+      "symbol": "BindableType.ViewModelType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 16,
+      "symbol": "BindableType.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 18,
+      "symbol": "BindableType.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 21,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 23,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 30,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 32,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 39,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 41,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 47,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/BindableType.swift",
+      "line": 49,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Font+Styles.swift",
+      "line": 31,
+      "symbol": "UIFont.scaledFont(textStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/ImplementationError.swift",
+      "line": 11,
+      "symbol": "ImplementationError",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/ImplementationError.swift",
+      "line": 27,
+      "symbol": "ImplementationError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Logger.swift",
+      "line": 119,
+      "symbol": "log",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Rx+Helpers.swift",
+      "line": 34,
+      "symbol": "PrimitiveSequenceType.mapToResult()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Rx+Helpers.swift",
+      "line": 38,
+      "symbol": "PrimitiveSequenceType.mapToResult(transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Rx+Helpers.swift",
+      "line": 46,
+      "symbol": "PrimitiveSequenceType.mapToResult()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Helpers/Rx+Helpers.swift",
+      "line": 50,
+      "symbol": "PrimitiveSequenceType.mapToResult(transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 16,
+      "symbol": "ReportsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 18,
+      "symbol": "ReportsViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 20,
+      "symbol": "ReportsViewController.stateView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 24,
+      "symbol": "ReportsViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 26,
+      "symbol": "ReportsViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 28,
+      "symbol": "ReportsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 34,
+      "symbol": "ReportsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewControllers/ReportsViewController.swift",
+      "line": 122,
+      "symbol": "ReportsViewController.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportSectionItemViewModel.swift",
+      "line": 11,
+      "symbol": "ReportSectionItemViewModel",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportSectionItemViewModel.swift",
+      "line": 13,
+      "symbol": "ReportSectionItemViewModel.reportTopUsersViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportSectionItemViewModel.swift",
+      "line": 15,
+      "symbol": "ReportSectionItemViewModel.reportUserViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 11,
+      "symbol": "ReportTopUsersViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 13,
+      "symbol": "ReportTopUsersViewModel.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 15,
+      "symbol": "ReportTopUsersViewModel.topUsers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 17,
+      "symbol": "ReportTopUsersViewModel.init(topUsers:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 23,
+      "symbol": "ReportTopUsersViewModel.reportTopUsersViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportTopUsersViewModel.swift",
+      "line": 27,
+      "symbol": "ReportTopUsersViewModel.reportUserViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 12,
+      "symbol": "ReportUserViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 14,
+      "symbol": "ReportUserViewModel.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 15,
+      "symbol": "ReportUserViewModel.totalPosts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 16,
+      "symbol": "ReportUserViewModel.averageCharacters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 17,
+      "symbol": "ReportUserViewModel.totalBodyLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 19,
+      "symbol": "ReportUserViewModel.model",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 21,
+      "symbol": "ReportUserViewModel.init(model:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 25,
+      "symbol": "ReportUserViewModel.reportTopUsersViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportUserViewModel.swift",
+      "line": 29,
+      "symbol": "ReportUserViewModel.reportUserViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 15,
+      "symbol": "ReportViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 17,
+      "symbol": "ReportViewModel.viewWillAppeared",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 18,
+      "symbol": "ReportViewModel.retryAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 20,
+      "symbol": "ReportViewModel.SectionType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 22,
+      "symbol": "ReportViewModel.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 26,
+      "symbol": "ReportViewModel.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 27,
+      "symbol": "ReportViewModel.isLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 30,
+      "symbol": "ReportViewModel.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/ReportViewModel.swift",
+      "line": 37,
+      "symbol": "ReportViewModel.init(useCase:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 12,
+      "symbol": "UserChartEntryViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 14,
+      "symbol": "UserChartEntryViewModel.dataEntry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 18,
+      "symbol": "UserChartEntryViewModel.model",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 19,
+      "symbol": "UserChartEntryViewModel.index",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 21,
+      "symbol": "UserChartEntryViewModel.init(model:index:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 26,
+      "symbol": "UserChartEntryViewModel.formattedTitle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/ViewModels/UserChartEntryViewModel.swift",
+      "line": 30,
+      "symbol": "UserChartEntryViewModel.formattedValue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 12,
+      "symbol": "ContentStateView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 14,
+      "symbol": "ContentStateView.State",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 15,
+      "symbol": "ContentStateView.State.empty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 16,
+      "symbol": "ContentStateView.State.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 17,
+      "symbol": "ContentStateView.State.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 18,
+      "symbol": "ContentStateView.State.loading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 19,
+      "symbol": "ContentStateView.State.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 22,
+      "symbol": "ContentStateView.activityIndicatorView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 29,
+      "symbol": "ContentStateView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 36,
+      "symbol": "ContentStateView.descriptionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 44,
+      "symbol": "ContentStateView.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 50,
+      "symbol": "ContentStateView.actionButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 58,
+      "symbol": "ContentStateView.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 67,
+      "symbol": "ContentStateView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 72,
+      "symbol": "ContentStateView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 77,
+      "symbol": "ContentStateView.updateState(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ContentStateView.swift",
+      "line": 84,
+      "symbol": "ContentStateView.update(toState:title:description:image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ReportCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ReportCollectionViewCell.userIdLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "ReportCollectionViewCell.userTotalPostLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "ReportCollectionViewCell.userAverageLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "ReportCollectionViewCell.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 19,
+      "symbol": "ReportCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 24,
+      "symbol": "ReportCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportCollectionViewCell.swift",
+      "line": 31,
+      "symbol": "ReportCollectionViewCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportHeaderCollectionView.swift",
+      "line": 11,
+      "symbol": "ReportHeaderCollectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportHeaderCollectionView.swift",
+      "line": 13,
+      "symbol": "ReportHeaderCollectionView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/ReportHeaderCollectionView.swift",
+      "line": 15,
+      "symbol": "ReportHeaderCollectionView.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "TopUsersCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "TopUsersCollectionViewCell.chartView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "TopUsersCollectionViewCell.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "TopUsersCollectionViewCell.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 29,
+      "symbol": "TopUsersCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/farshad/Documents/Projects/iOS/Interview Demos/SternXTask/SternXTask/Presentation/User Reports/Views/TopUsersCollectionViewCell.swift",
+      "line": 35,
+      "symbol": "TopUsersCollectionViewCell.bindViewModel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

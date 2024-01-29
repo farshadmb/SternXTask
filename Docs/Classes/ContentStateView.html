@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ContentStateView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ContentStateView" class="dashAnchor"></a>
+    <a title="ContentStateView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SternXTask Docs</a> (29% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SternXTask Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        ContentStateView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDIContainers.html">AppDIContainers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ContentStateView.html">ContentStateView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ContentStateView/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultAPIClient.html">DefaultAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultReportUsecase.html">DefaultReportUsecase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostRemoteRepository.html">PostRemoteRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportCollectionViewCell.html">ReportCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportDataProcessingStrategy.html">ReportDataProcessingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportHeaderCollectionView.html">ReportHeaderCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportTopUsersViewModel.html">ReportTopUsersViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportUserViewModel.html">ReportUserViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportViewModel.html">ReportViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReportsViewController.html">ReportsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TopUsersCollectionViewCell.html">TopUsersCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserChartEntryViewModel.html">UserChartEntryViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserPostReport.html">UserPostReport</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10SternXTask3logAA6LoggerVmvp">log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/ObservableType.html">ObservableType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/PrimitiveSequenceType.html">PrimitiveSequenceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift.html">Swift</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIClient.html">APIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/APIRequest.html">APIRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/APIRequestTask.html">APIRequestTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BindableType.html">BindableType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DataProcessingStrategy.html">DataProcessingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PostRepository.html">PostRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReportSectionItemViewModel.html">ReportSectionItemViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReportUsecase.html">ReportUsecase</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIParametersRequest.html">APIParametersRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImplementationError.html">ImplementationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PostDto.html">PostDto</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ContentStateView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ContentStateView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC0D0O"></a>
+                    <a name="//apple_ref/swift/Enum/State" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC0D0O">State</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/ContentStateView/State.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC017activityIndicatorE0So010UIActivitygE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/activityIndicatorView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC017activityIndicatorE0So010UIActivitygE0Cvp">activityIndicatorView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">activityIndicatorView</span><span class="p">:</span> <span class="kt">UIActivityIndicatorView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC10titleLabelSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/titleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC10titleLabelSo7UILabelCvp">titleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">titleLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC16descriptionLabelSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/descriptionLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC16descriptionLabelSo7UILabelCvp">descriptionLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">descriptionLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC05imageE0So07UIImageE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/imageView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC05imageE0So07UIImageE0Cvp">imageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">imageView</span><span class="p">:</span> <span class="kt">UIImageView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC12actionButtonSo8UIButtonCvp"></a>
+                    <a name="//apple_ref/swift/Property/actionButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC12actionButtonSo8UIButtonCvp">actionButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">actionButton</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC5stateAC0D0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC5stateAC0D0Ovp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">ContentStateView</span><span class="o">.</span><span class="kt"><a href="../Classes/ContentStateView/State.html">State</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SternXTask@objc(cs)ContentStateView(im)initWithFrame:"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SternXTask@objc(cs)ContentStateView(im)initWithFrame:">init(frame:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SternXTask@objc(cs)ContentStateView(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SternXTask@objc(cs)ContentStateView(im)initWithCoder:">init(coder:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC06updateD02toyAC0D0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateState(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC06updateD02toyAC0D0O_tF">updateState(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateState</span><span class="p">(</span><span class="n">to</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Classes/ContentStateView/State.html">State</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SternXTask16ContentStateViewC6update02toD05title11description5imageyAC0D0O_SSSgAKSo7UIImageCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/update(toState:title:description:image:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SternXTask16ContentStateViewC6update02toD05title11description5imageyAC0D0O_SSSgAKSo7UIImageCSgtF">update(toState:<wbr>title:<wbr>description:<wbr>image:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">toState</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Classes/ContentStateView/State.html">State</a></span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://github.com/farshadmb" target="_blank" rel="external noopener">Farshad Mousalou Benis</a>. All rights reserved. (Last updated: 2024-01-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
