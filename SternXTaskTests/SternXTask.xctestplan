@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "B5301C88-EDB4-44D5-92C7-67699E60925B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SternXTask.xcodeproj",
+      "identifier" : "F8FD324C2B656A7F002FC296",
+      "name" : "SternXTask"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SternXTask.xcodeproj",
+        "identifier" : "F8FD32602B656AB3002FC296",
+        "name" : "SternXTaskTests"
+      }
+    }
+  ],
+  "version" : 1
+}
