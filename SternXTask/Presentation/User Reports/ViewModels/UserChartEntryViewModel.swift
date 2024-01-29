@@ -24,7 +24,7 @@ final class UserChartEntryViewModel {
     }
     
     func formattedTitle() -> String {
-        return "\(model.id)"
+        return "Id: \(model.id)"
     }
     
     func formattedValue() -> String {

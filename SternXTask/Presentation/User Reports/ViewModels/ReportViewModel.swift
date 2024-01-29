@@ -60,9 +60,10 @@ class ReportViewModel {
         }
         loading.accept(true)
         let report = useCase.getPostReport(ascending: false)
-            .asObservable().mapToResult().share(replay: 1, scope: .whileConnected)
-            .do(onError: { [weak loading] _ in loading?.accept(false) })
-        report.compactMap(\.failure).bind(to: errorSub).disposed(by: disposeBag)
+            .asObservable().mapToResult()
+            .share(replay: 1, scope: .whileConnected)
+        report.compactMap(\.failure).do { [weak loading] _ in loading?.accept(false) }
+            .bind(to: errorSub).disposed(by: disposeBag)
         report.compactMap(\.success).bind(to: reportSub).disposed(by: disposeBag)
     }
     

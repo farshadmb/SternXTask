@@ -21,11 +21,15 @@ final class DefaultReportUsecase: ReportUsecase {
         self.dataProcessorStrategy = dataProcessorStrategy
     }
     
-    func getPostReport(ascending asc: Bool) -> Single<UserPostReport> {
+    func getPostReport(ascending: Bool) -> Single<UserPostReport> {
         postRepository.getPosts()
             .flatMap(processAndGenerateReport(with:))
             .map { report in
-                report.users = report.users.sorted { $0.averageCharacters < $1.averageCharacters && asc }
+                if ascending {
+                    report.users = report.users.sorted { $0.averageCharacters < $1.averageCharacters }
+                } else {
+                    report.users = report.users.sorted { $0.averageCharacters > $1.averageCharacters }
+                }
                 return report
             }
     }

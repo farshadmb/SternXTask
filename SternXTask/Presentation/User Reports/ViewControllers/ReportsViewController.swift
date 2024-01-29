@@ -31,6 +31,12 @@ class ReportsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel?.viewWillAppeared.onNext(())
+        collectionView.reloadData()
+    }
+    
     private func setupLayouts() {
         setupCollectionViewLayout()
         setupContentStateView()
@@ -41,14 +47,13 @@ class ReportsViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         collectionView.registerCell(type: TopUsersCollectionViewCell.self)
         collectionView.registerCell(type: ReportCollectionViewCell.self)
-        collectionView.registerSupplementaryView(type: ReportCollectionViewCell.self,
+        collectionView.registerSupplementaryView(type: ReportHeaderCollectionView.self,
                                                  kind: UICollectionView.elementKindSectionHeader)
     }
     
     private func setupContentStateView() {
         view.addSubview(stateView)
         stateView.autoPinEdgesToSuperviewSafeArea()
-        stateView.isHidden = true
     }
     
     private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
@@ -64,11 +69,9 @@ class ReportsViewController: UIViewController {
     
     private func firstLayoutSection() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalHeight(1))
+                                              heightDimension: .absolute(150))
         let item = NSCollectionLayoutItem(layoutSize: itemSize) // Without badge
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .fractionalWidth(1.0))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPagingCentered
         section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16,
@@ -78,18 +81,18 @@ class ReportsViewController: UIViewController {
                                                              heightDimension: .estimated(44))
         let supplementary = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: supplementaryLayoutSize,
                                                                         elementKind: UICollectionView.elementKindSectionHeader,
-                                                                        alignment: .bottomTrailing)
+                                                                        alignment: .topLeading)
         section.boundarySupplementaryItems = [supplementary]
         return section
     }
     
     private func otherLayoutSection() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalHeight(1.0))
+                                              heightDimension: .estimated(75))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .estimated(50))
+                                               heightDimension: .estimated(75))
         
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
         group.interItemSpacing = .fixed(CGFloat(8))
@@ -101,7 +104,7 @@ class ReportsViewController: UIViewController {
         
         let supplementary = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: supplementaryLayoutSize,
                                                                         elementKind: UICollectionView.elementKindSectionHeader,
-                                                                        alignment: .bottomTrailing)
+                                                                        alignment: .top)
         section.boundarySupplementaryItems = [supplementary]
         return section
     }
@@ -119,7 +122,7 @@ class ReportsViewController: UIViewController {
     func bind(to viewModel: ReportViewModel) {
         self.viewModel = viewModel
         loadViewIfNeeded()
-        
+        stateView.actionButton.rx.tap.bind(to: viewModel.retryAction).disposed(by: disposeBag)
         viewModel.isLoading.asObservable().bind(with: stateView) { view, isLoading in
             view.update(toState: isLoading ? .loading : .none, title: "Loading...",
                         description: "Getting information and generating report.", image: nil)
@@ -130,14 +133,24 @@ class ReportsViewController: UIViewController {
                         image: UIImage(systemName: "exclamationmark.circle.fill")?.withRenderingMode(.alwaysTemplate))
         }.disposed(by: disposeBag)
         
-        Driver.combineLatest(viewModel.isLoading, viewModel.items).asObservable().skip(1)
+        let stateSource = Driver.combineLatest(viewModel.isLoading, viewModel.items).asObservable().skip(1)
             .map { (isLoading: $0, count: $1.count) }
-            .filter { !$0.isLoading && $0.count == 0 }
+            .share(replay: 1, scope: .whileConnected)
+            
+        stateSource.filter { !$0.isLoading && $0.count == 0 }
             .bind(with: self) { strongSelf, _ in
                 strongSelf.stateView.update(toState: .empty, title: "Oops",
                                             description: "There is no users or post to display the report result.",
                                             image: UIImage(systemName: "doc.append")?.withRenderingMode(.alwaysTemplate))
             }.disposed(by: disposeBag)
+        
+        stateSource.filter { !$0.isLoading && $0.count > 0 }.bind(with: stateView) { view, _ in
+            view.update(toState: .success)
+        }.disposed(by: disposeBag)
+        
+        let dataSource = dataSource()
+        viewModel.items.asObservable()
+            .bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
         
     }
     

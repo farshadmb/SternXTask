@@ -58,7 +58,7 @@ extension UICollectionView {
      */
     func registerSupplementaryView<T>(type: T.Type, kind elementKind: String,
                                    reuseIdentifier identifier: String = .init(describing: T.self)) where T: UICollectionReusableView {
-        register(type.nib,forSupplementaryViewOfKind: elementKind, withReuseIdentifier: identifier)
+        register(type.nib, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: identifier)
     }
 
     /**

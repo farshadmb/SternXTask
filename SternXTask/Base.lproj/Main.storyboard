@@ -38,6 +38,9 @@
                             <constraint firstItem="LYQ-ug-tdL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vGr-Qb-I4c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="LYQ-ug-tdL" id="6a1-N2-EF8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

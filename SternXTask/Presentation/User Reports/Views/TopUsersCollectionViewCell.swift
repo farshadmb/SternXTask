@@ -78,13 +78,13 @@ class TopUsersCollectionViewCell: UICollectionViewCell, BindableType {
         xAxis.drawGridLinesEnabled = false
         xAxis.granularityEnabled = true
         xAxis.labelRotationAngle = 0
-        xAxis.labelCount = 7
+        xAxis.labelCount = 5
         xAxis.axisLineColor = .clear
-        xAxis.labelTextColor = .systemGreen
+        xAxis.labelTextColor = .secondaryLabel
         xAxis.granularity = 0.1
         xAxis.granularityEnabled = true
         
-        xAxis.labelFont = UIFont.systemFont(ofSize: 12.0).scaledFont(textStyle: .footnote)
+        xAxis.labelFont = UIFont.systemFont(ofSize: 12.0)
     }
     
     private func setupChartYAxisViews() {
@@ -112,7 +112,7 @@ class TopUsersCollectionViewCell: UICollectionViewCell, BindableType {
         leftAxis.granularityEnabled = true
         leftAxis.granularity = 0.01
         
-        leftAxis.drawLabelsEnabled = false
+        leftAxis.drawLabelsEnabled = true
         leftAxis.labelCount = 4
         leftAxis.forceLabelsEnabled = true
         leftAxis.axisMinimum = 0
@@ -124,7 +124,7 @@ class TopUsersCollectionViewCell: UICollectionViewCell, BindableType {
         set.setColor(.blue)
         set.highlightColor = .systemGreen
         set.highlightAlpha = 1
-        set.valueFont = UIFont.systemFont(ofSize: 12, weight: .medium).scaledFont(textStyle: .caption1)
+        set.valueFont = UIFont.systemFont(ofSize: 12, weight: .medium)
         set.valueTextColor = .black
         
         let data = chartData

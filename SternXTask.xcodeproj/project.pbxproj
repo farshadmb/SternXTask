@@ -44,6 +44,7 @@
 		F8A646952B681FEA009427DC /* ReportTopUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646942B681FEA009427DC /* ReportTopUsersViewModel.swift */; };
 		F8A646972B6820B7009427DC /* ImplementationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646962B6820B7009427DC /* ImplementationError.swift */; };
 		F8A646992B68296E009427DC /* UserChartEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646982B68296E009427DC /* UserChartEntryViewModel.swift */; };
+		F8A6469B2B682CB2009427DC /* AppDIContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6469A2B682CB2009427DC /* AppDIContainers.swift */; };
 		F8DE62512B66F41100FF780D /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62502B66F41100FF780D /* PostDto.swift */; };
 		F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */; };
 		F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62582B66F51F00FF780D /* PostRepository.swift */; };
@@ -115,6 +116,7 @@
 		F8A646942B681FEA009427DC /* ReportTopUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTopUsersViewModel.swift; sourceTree = "<group>"; };
 		F8A646962B6820B7009427DC /* ImplementationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementationError.swift; sourceTree = "<group>"; };
 		F8A646982B68296E009427DC /* UserChartEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChartEntryViewModel.swift; sourceTree = "<group>"; };
+		F8A6469A2B682CB2009427DC /* AppDIContainers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainers.swift; sourceTree = "<group>"; };
 		F8DE62502B66F41100FF780D /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
 		F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRemoteRepository.swift; sourceTree = "<group>"; };
 		F8DE62582B66F51F00FF780D /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				F84C83F82B6585ED003FE569 /* Domain */,
 				F84C83F72B6585E7003FE569 /* DataLayer */,
 				F84C83F62B6585D8003FE569 /* Presentation */,
+				F8A6469A2B682CB2009427DC /* AppDIContainers.swift */,
 				F8FD32502B656A7F002FC296 /* AppDelegate.swift */,
 				F8FD32522B656A81002FC296 /* Assets.xcassets */,
 				F84C83F92B658784003FE569 /* Main.storyboard */,
@@ -625,6 +628,7 @@
 				F8A6467D2B68053A009427DC /* ContentStateView.swift in Sources */,
 				F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */,
 				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
+				F8A6469B2B682CB2009427DC /* AppDIContainers.swift in Sources */,
 				F8DE62512B66F41100FF780D /* PostDto.swift in Sources */,
 				F8A646832B6814FA009427DC /* CollectionView+helpers.swift in Sources */,
 				F8DE625F2B66FC5E00FF780D /* ReportUsecase.swift in Sources */,

@@ -22,7 +22,7 @@
                         <rect key="frame" x="16" y="16" width="406" height="216"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="WPm-NV-q1r" secondAttribute="height" multiplier="203:108" id="Soz-k4-qWz"/>
+                            <constraint firstAttribute="width" secondItem="WPm-NV-q1r" secondAttribute="height" multiplier="203:108" priority="850" id="Soz-k4-qWz"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -31,7 +31,7 @@ extension UIFont {
     func scaledFont(textStyle: UIFont.TextStyle) -> UIFont {
 
         let fontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: textStyle)
-
+        
         guard let customFont = UIFont(name: fontName, size: fontDescriptor.pointSize) else {
             fatalError("Failed to load the \(fontName) font.")
         }
