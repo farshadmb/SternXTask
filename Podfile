@@ -41,6 +41,11 @@ target 'SternXTask' do
 end
 
 post_install do |installer|
+
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["CLANG_ENABLE_CODE_COVERAGE"] = 'NO'
+    config.build_settings['ENABLE_CODE_COVERAGE'] = 'NO'
+  end
   # this code for make resolve waring that be noticed by xcode 12.
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|

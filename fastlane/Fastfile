@@ -50,6 +50,7 @@ platform :ios do
           workspace: workspace, 
           device: device, # Devices for testing     
           configuration: "Debug",
+          code_coverage: true,
           open_report: open_report)
  end
 

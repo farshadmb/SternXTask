@@ -26,6 +26,8 @@
 		F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62622B67017600FF780D /* DefaultReportUsecase.swift */; };
 		F8DE62652B67056700FF780D /* DataProcessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62642B67056700FF780D /* DataProcessingStrategy.swift */; };
 		F8DE62672B67063E00FF780D /* ReportDataProcessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62662B67063E00FF780D /* ReportDataProcessingStrategy.swift */; };
+		F8E02B242B67426A00DCDCA9 /* MockTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E02B232B67426A00DCDCA9 /* MockTestCases.swift */; };
+		F8E02B262B67431500DCDCA9 /* MockTestsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E02B252B67431500DCDCA9 /* MockTestsHelpers.swift */; };
 		F8FD32512B656A7F002FC296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD32502B656A7F002FC296 /* AppDelegate.swift */; };
 		F8FD32532B656A81002FC296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32522B656A81002FC296 /* Assets.xcassets */; };
 		F8FD32562B656A81002FC296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FD32542B656A81002FC296 /* LaunchScreen.storyboard */; };
@@ -66,6 +68,8 @@
 		F8DE62622B67017600FF780D /* DefaultReportUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReportUsecase.swift; sourceTree = "<group>"; };
 		F8DE62642B67056700FF780D /* DataProcessingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcessingStrategy.swift; sourceTree = "<group>"; };
 		F8DE62662B67063E00FF780D /* ReportDataProcessingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProcessingStrategy.swift; sourceTree = "<group>"; };
+		F8E02B232B67426A00DCDCA9 /* MockTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTestCases.swift; sourceTree = "<group>"; };
+		F8E02B252B67431500DCDCA9 /* MockTestsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTestsHelpers.swift; sourceTree = "<group>"; };
 		F8FD324D2B656A7F002FC296 /* SternXTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SternXTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD32502B656A7F002FC296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FD32522B656A81002FC296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +219,15 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		F8E02B222B67424C00DCDCA9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E02B232B67426A00DCDCA9 /* MockTestCases.swift */,
+				F8E02B252B67431500DCDCA9 /* MockTestsHelpers.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		F8FD32442B656A7F002FC296 = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +267,7 @@
 		F8FD32622B656AB3002FC296 /* SternXTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8E02B222B67424C00DCDCA9 /* Mocks */,
 				F8FD32632B656AB3002FC296 /* SternXTaskTests.swift */,
 			);
 			path = SternXTaskTests;
@@ -485,7 +499,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E02B262B67431500DCDCA9 /* MockTestsHelpers.swift in Sources */,
 				F8FD32642B656AB3002FC296 /* SternXTaskTests.swift in Sources */,
+				F8E02B242B67426A00DCDCA9 /* MockTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +730,7 @@
 				DEVELOPMENT_TEAM = 638B4QA28J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -737,6 +754,7 @@
 				DEVELOPMENT_TEAM = 638B4QA28J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.SternXTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

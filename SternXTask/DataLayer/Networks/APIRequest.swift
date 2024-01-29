@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// a `APIRqeuest` abstract that can be used by adapted types where is be used to send request.
+/// a `APIRequest` abstract that can be used by adapted types where is be used to send request.
 protocol APIRequest {
     
     /// The  value which to be used in response status code validation.
