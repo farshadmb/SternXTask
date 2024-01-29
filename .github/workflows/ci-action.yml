@@ -14,7 +14,7 @@ on:
 jobs:
   Swiftlint:
     name: Swiftlint Checker
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
         - name: Checkout Branch
           uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
     - name: Dependency installation
       run: bundle install
     - name: Build and test
-      run: bundle exec fastlane run_ci_tests clean:true --verbose
+      run: bundle exec fastlane runTestCases clean:true --verbose
     - name: Archive Failed Tests artifacts
       if: failure()
       uses: actions/upload-artifact@v2
