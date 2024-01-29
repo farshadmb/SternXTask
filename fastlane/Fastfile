@@ -23,6 +23,8 @@ platform :ios do
   before_all do |lane| 
     UI.message "prepare for builds"
     cocoapods()
+    UI.message "Checking the xcode requirement version for build or test ..."
+    xcversion(version: ">= 15.0")
     UI.message "prepared for build"
   end
 
