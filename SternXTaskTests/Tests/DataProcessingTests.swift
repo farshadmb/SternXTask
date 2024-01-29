@@ -11,6 +11,8 @@ import XCTest
 
 final class DataProcessingTests: XCTestCase {
 
+    let dataFetcher = DataFetcherHelper()
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,19 +21,58 @@ final class DataProcessingTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFullPostReport() throws {
+        let exp = expectation(description: #function)
+        let data = try dataFetcher.getData(from: "fullPosts.json", type: [PostDto].self)
+        let dataProcess = ReportDataProcessingStrategy(operationQueue: .global(qos: .default))
+        dataProcess.process(data: data) { result in
+            // swiftlint:disable:next force_unwrapping
+            XCTAssertNil(result.failure, "The data processing met error: \(result.failure!)")
+            guard case let .success(report) = result else {
+                exp.fulfill()
+                return
+            }
+            XCTAssertEqual(report.topMostUsers.count, 5, "The report does not contain top 5 member with highest post")
+            exp.fulfill()
         }
+            
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    func testEmptyData() throws {
+        let exp = expectation(description: #function)
+        let data = [PostDto]()
+        let dataProcess = ReportDataProcessingStrategy(operationQueue: .global(qos: .default))
+        dataProcess.process(data: data) { result in
+            // swiftlint:disable:next force_unwrapping
+            XCTAssertNil(result.failure, "The data processing met error: \(result.failure!)")
+            guard case let .success(report) = result else {
+                exp.fulfill()
+                return
+            }
+            XCTAssertNotEqual(report.topMostUsers.count, 5, "The report does contain top 5 member with highest post")
+            exp.fulfill()
+        }
+            
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    func testFiftyPostsReport() throws {
+        let exp = expectation(description: #function)
+        let data = try dataFetcher.getData(from: "halfPosts.json", type: [PostDto].self)
+        let dataProcess = ReportDataProcessingStrategy(operationQueue: .global(qos: .default))
+        dataProcess.process(data: data) { result in
+            // swiftlint:disable:next force_unwrapping
+            XCTAssertNil(result.failure, "The data processing met error: \(result.failure!)")
+            guard case let .success(report) = result else {
+                exp.fulfill()
+                return
+            }
+            XCTAssertEqual(report.topMostUsers.count, 5, "The report does not contain top 5 member with highest post")
+            exp.fulfill()
+        }
+            
+        wait(for: [exp], timeout: 1.0)
     }
 
 }

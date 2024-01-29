@@ -18,6 +18,13 @@
 		F84C83FB2B658784003FE569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C83F92B658784003FE569 /* Main.storyboard */; };
 		F8A6465E2B6750C5009427DC /* DefaultAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6465D2B6750C5009427DC /* DefaultAPIClientTests.swift */; };
 		F8A646612B675817009427DC /* DataProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646602B675817009427DC /* DataProcessingTests.swift */; };
+		F8A646632B67D567009427DC /* fullPosts.json in Resources */ = {isa = PBXBuildFile; fileRef = F8A646622B67D567009427DC /* fullPosts.json */; };
+		F8A646652B67D58E009427DC /* halfPosts.json in Resources */ = {isa = PBXBuildFile; fileRef = F8A646642B67D58E009427DC /* halfPosts.json */; };
+		F8A646672B67D5D7009427DC /* DataFetcherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646662B67D5D7009427DC /* DataFetcherHelper.swift */; };
+		F8A646692B67D7C4009427DC /* UnitTestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A646682B67D7C4009427DC /* UnitTestError.swift */; };
+		F8A6466B2B67D922009427DC /* Result+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466A2B67D922009427DC /* Result+Helpers.swift */; };
+		F8A6466D2B67E04C009427DC /* PostRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466C2B67E04C009427DC /* PostRemoteRepositoryTests.swift */; };
+		F8A6466F2B67E41E009427DC /* ReportUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6466E2B67E41E009427DC /* ReportUseCaseTests.swift */; };
 		F8DE62512B66F41100FF780D /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62502B66F41100FF780D /* PostDto.swift */; };
 		F8DE62562B66F4F700FF780D /* PostsRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */; };
 		F8DE62592B66F51F00FF780D /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE62582B66F51F00FF780D /* PostRepository.swift */; };
@@ -63,6 +70,13 @@
 		F8A6465D2B6750C5009427DC /* DefaultAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIClientTests.swift; sourceTree = "<group>"; };
 		F8A6465F2B67560B009427DC /* SternXTask.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SternXTask.xctestplan; sourceTree = "<group>"; };
 		F8A646602B675817009427DC /* DataProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcessingTests.swift; sourceTree = "<group>"; };
+		F8A646622B67D567009427DC /* fullPosts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullPosts.json; sourceTree = "<group>"; };
+		F8A646642B67D58E009427DC /* halfPosts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfPosts.json; sourceTree = "<group>"; };
+		F8A646662B67D5D7009427DC /* DataFetcherHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherHelper.swift; sourceTree = "<group>"; };
+		F8A646682B67D7C4009427DC /* UnitTestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestError.swift; sourceTree = "<group>"; };
+		F8A6466A2B67D922009427DC /* Result+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Helpers.swift"; sourceTree = "<group>"; };
+		F8A6466C2B67E04C009427DC /* PostRemoteRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteRepositoryTests.swift; sourceTree = "<group>"; };
+		F8A6466E2B67E41E009427DC /* ReportUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUseCaseTests.swift; sourceTree = "<group>"; };
 		F8DE62502B66F41100FF780D /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
 		F8DE62552B66F4F700FF780D /* PostsRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRemoteRepository.swift; sourceTree = "<group>"; };
 		F8DE62582B66F51F00FF780D /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
@@ -139,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F8232CE12B6598B8006E9B54 /* Logger.swift */,
+				F8A6466A2B67D922009427DC /* Result+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +199,9 @@
 			children = (
 				F8A6465D2B6750C5009427DC /* DefaultAPIClientTests.swift */,
 				F8A646602B675817009427DC /* DataProcessingTests.swift */,
+				F8A6466C2B67E04C009427DC /* PostRemoteRepositoryTests.swift */,
+				F8A6466E2B67E41E009427DC /* ReportUseCaseTests.swift */,
+				F8A646662B67D5D7009427DC /* DataFetcherHelper.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -285,6 +303,9 @@
 				F8A6465C2B674B9F009427DC /* Tests */,
 				F8E02B222B67424C00DCDCA9 /* Mocks */,
 				F8FD32632B656AB3002FC296 /* SternXTaskTests.swift */,
+				F8A646622B67D567009427DC /* fullPosts.json */,
+				F8A646642B67D58E009427DC /* halfPosts.json */,
+				F8A646682B67D7C4009427DC /* UnitTestError.swift */,
 			);
 			path = SternXTaskTests;
 			sourceTree = "<group>";
@@ -386,6 +407,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A646652B67D58E009427DC /* halfPosts.json in Resources */,
+				F8A646632B67D567009427DC /* fullPosts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +522,7 @@
 				F8232CE62B65A28C006E9B54 /* APIParametersRequest.swift in Sources */,
 				F8DE62672B67063E00FF780D /* ReportDataProcessingStrategy.swift in Sources */,
 				F8232CDD2B659249006E9B54 /* APIRequest.swift in Sources */,
+				F8A6466B2B67D922009427DC /* Result+Helpers.swift in Sources */,
 				F8DE62632B67017600FF780D /* DefaultReportUsecase.swift in Sources */,
 				F8232CDB2B658F15006E9B54 /* APIClient.swift in Sources */,
 				F8DE62512B66F41100FF780D /* PostDto.swift in Sources */,
@@ -516,10 +540,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E02B262B67431500DCDCA9 /* MockTestsHelpers.swift in Sources */,
+				F8A6466F2B67E41E009427DC /* ReportUseCaseTests.swift in Sources */,
 				F8FD32642B656AB3002FC296 /* SternXTaskTests.swift in Sources */,
 				F8E02B242B67426A00DCDCA9 /* MockTestCases.swift in Sources */,
+				F8A646672B67D5D7009427DC /* DataFetcherHelper.swift in Sources */,
+				F8A646692B67D7C4009427DC /* UnitTestError.swift in Sources */,
 				F8A646612B675817009427DC /* DataProcessingTests.swift in Sources */,
 				F8A6465E2B6750C5009427DC /* DefaultAPIClientTests.swift in Sources */,
+				F8A6466D2B67E04C009427DC /* PostRemoteRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
